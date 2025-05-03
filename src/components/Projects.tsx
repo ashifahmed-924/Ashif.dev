@@ -12,7 +12,7 @@ export default function Projects() {
       description: "An e-commerce platform for a tailor store allowing customers to browse, customize, and order tailored clothing online.",
       contribution: "Developed the full-stack application with PHP and MySQL, implementing secure user authentication and payment processing.",
       tags: ["PHP", "MySQL", "JavaScript", "Bootstrap", "CSS"],
-      image: "/placeholder.svg",
+      image: "/projects/OTS.jpeg",
       github: "#"
     },
     {
@@ -20,7 +20,7 @@ export default function Projects() {
       description: "A comprehensive platform connecting restaurants with customers for online food ordering and delivery tracking.",
       contribution: "Built the backend API with Java and integrated with MySQL database. Implemented order tracking and notification system.",
       tags: ["Java", "MySQL", "REST API", "Servlets", "JSP"],
-      image: "/placeholder.svg",
+      image: "/projects/OFOS.jpeg",
       github: "#"
     },
     {
@@ -28,7 +28,7 @@ export default function Projects() {
       description: "Modern web application for a tailor store with appointment scheduling, measurement tracking, and order management.",
       contribution: "Developed using the MERN stack with real-time updates, responsive design, and secure authentication.",
       tags: ["MongoDB", "Express.js", "React", "Node.js", "Redux"],
-      image: "/placeholder.svg",
+      image: "/projects/MSR.jpeg",
       github: "#"
     }
   ];

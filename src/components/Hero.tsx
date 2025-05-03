@@ -40,10 +40,11 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-full blur opacity-40"></div>
               <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background relative z-10">
-                {/* Replace with actual image when available */}
-                <div className="w-full h-full bg-gradient-to-br from-primary/40 to-accent/40 flex items-center justify-center text-4xl font-bold text-white">
-                  AA
-                </div>
+                <img
+                  src="/Ashif dp.jpeg"
+                  alt="Ashif Ahmed"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

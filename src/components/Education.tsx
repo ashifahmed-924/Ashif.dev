@@ -25,7 +25,7 @@ export default function Education() {
       <div className="max-w-3xl mx-auto">
         <div className="relative">
           {/* Timeline line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-muted-foreground/20"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 h-full w-0.5 bg-muted-foreground/20 -translate-x-1/2"></div>
           
           {/* Education items */}
           {education.map((item, index) => (
@@ -34,17 +34,22 @@ export default function Education() {
               className={cn(
                 "relative mb-12 opacity-0 animate-fade-in",
                 "md:w-1/2",
-                index % 2 === 0 ? "md:ml-auto md:pl-12" : "md:pr-12",
+                index % 2 === 0 ? "md:ml-auto md:pl-12" : "md:mr-auto md:pr-12",
               )}
               style={{ animationDelay: `${0.2 + index * 0.2}s` }}
             >
               {/* Timeline dot */}
-              <div className="hidden md:block absolute top-0 w-4 h-4 rounded-full bg-primary">
+              <div className="hidden md:block absolute top-0 -ml-2 w-4 h-4 rounded-full bg-primary"
+                style={{
+                  left: index % 2 === 0 ? '-2.5rem' : 'calc(100% + 1.5rem)',
+                }}
+              >
                 <div className="absolute inset-0 w-4 h-4 rounded-full animate-ping bg-primary opacity-20"></div>
                 <div 
                   className={cn(
-                    "absolute top-2 -mt-px w-12 h-0.5 bg-primary",
-                    index % 2 === 0 ? "-left-12" : "-right-12",
+                    "absolute top-2 -mt-px h-0.5 bg-primary",
+                    index % 2 === 0 ? "-left-12 right-auto" : "-right-12 left-auto",
+                    "w-12"
                   )}
                 ></div>
               </div>

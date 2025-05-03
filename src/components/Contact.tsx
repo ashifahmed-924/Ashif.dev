@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -23,49 +22,79 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "3a205657-355c-4b16-b829-6ba18ecc4a7d", // Replace with your actual access key
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Message sent!",
+          description: "Thanks for reaching out. I'll get back to you soon.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error) {
       toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        title: "Error",
+        description: error instanceof Error ? error.message : "Failed to send message. Please try again later.",
+        variant: "destructive",
       });
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    }, 1500);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactMethods = [
     {
       icon: <Mail className="h-8 w-8 text-primary" />,
       title: "Email",
-      value: "ashif.ahmed@example.com",
-      link: "mailto:ashif.ahmed@example.com",
+      value: "ashifahmd924@gmail.com",
+      link: "mailto:ashifahmd924@gmail.com",
     },
     {
       icon: <Phone className="h-8 w-8 text-primary" />,
       title: "Phone",
-      value: "+94 123 456 789",
-      link: "tel:+94123456789",
+      value: (
+        <>
+          +94 77 924 9200<br />
+          +94 71 433 0962
+        </>
+      ),
+      link: "tel:+94779249200",
     },
     {
       icon: <Linkedin className="h-8 w-8 text-primary" />,
       title: "LinkedIn",
       value: "ashif-ahmed",
-      link: "https://linkedin.com/in/ashif-ahmed",
+      link: "https://www.linkedin.com/in/ashif-nawas/",
     },
     {
       icon: <Github className="h-8 w-8 text-primary" />,
       title: "GitHub",
       value: "ashifahmed",
-      link: "https://github.com/ashifahmed",
+      link: "https://github.com/ashifahmed-924",
     },
   ];
 
@@ -104,6 +133,10 @@ export default function Contact() {
         
         <div className="opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <form onSubmit={handleSubmit} className="space-y-6">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="New Contact Form Submission" />
+            <input type="checkbox" name="botcheck" className="hidden" />
+            
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
               <Input
