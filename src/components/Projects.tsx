@@ -13,7 +13,7 @@ export default function Projects() {
       contribution: "Developed the full-stack application with PHP and MySQL, implementing secure user authentication and payment processing.",
       tags: ["PHP", "MySQL", "JavaScript", "Bootstrap", "CSS"],
       image: "/projects/OTS.jpeg",
-      github: "#"
+      github: "https://github.com/ashifahmed-924/Online-Tailor-Store"
     },
     {
       title: "Online Food Ordering System",
@@ -21,7 +21,7 @@ export default function Projects() {
       contribution: "Built the backend API with Java and integrated with MySQL database. Implemented order tracking and notification system.",
       tags: ["Java", "MySQL", "REST API", "Servlets", "JSP"],
       image: "/projects/OFOS.jpeg",
-      github: "#"
+      github: "https://github.com/ashifahmed-924/Online-food-ordering-system"
     },
     {
       title: "MSR Tailor Store",
@@ -29,7 +29,7 @@ export default function Projects() {
       contribution: "Developed using the MERN stack with real-time updates, responsive design, and secure authentication.",
       tags: ["MongoDB", "Express.js", "React", "Node.js", "Redux"],
       image: "/projects/MSR.jpeg",
-      github: "#"
+      github: "https://github.com/ashifahmed-924/MSR-ITP"
     }
   ];
 

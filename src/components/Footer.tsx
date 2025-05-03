@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center">
           <div className="flex space-x-4 mb-6">
             <a
-              href="https://github.com/ashifahmed"
+              href="https://github.com/ashifahmed-924"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors"
@@ -19,7 +19,7 @@ export default function Footer() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/ashif-ahmed"
+              href="https://www.linkedin.com/in/ashif-nawas/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors"
@@ -28,7 +28,7 @@ export default function Footer() {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:ashif.ahmed@example.com"
+              href="mailto:ashifahmd924@gmail.com"
               className="text-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >
