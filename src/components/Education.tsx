@@ -8,7 +8,7 @@ export default function Education() {
       degree: "BSc (Hons) in Information Technology",
       institution: "Sri Lanka Institute of Information Technology (SLIIT)",
       period: "2022 – Present",
-      description: "Specializing in Software Engineering with focus on web technologies, database management, and software development practices.",
+      description: "Specializing in Information Technology(IT) with focus on web technologies, database management, and software development practices.",
     },
     {
       degree: "GCE A/L in Commerce Stream",
