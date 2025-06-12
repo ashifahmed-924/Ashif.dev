@@ -14,15 +14,15 @@ export default function Hero() {
           <div className="lg:w-1/2 text-center lg:text-left opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
               <span className="block">Hi, I'm</span>
-              <span className="text-primary block">Ashif Ahmed</span>
+              <span className="text-primary block">Ashif Ahmed.</span>
             </h1>
             
             <h2 className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-6">
-              Web Developer & Tech Enthusiast
+              UI/UX Designer & Frontend Enthusiast
             </h2>
             
             <p className="text-lg mb-8 max-w-xl mx-auto lg:mx-0">
-              Building innovative web solutions with a passion for clean code and user-centered design.
+              Design. Code. Repeat — for humans.
             </p>
             
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">

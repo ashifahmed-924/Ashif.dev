@@ -28,13 +28,16 @@ export default function About() {
 
       <div className="max-w-3xl mx-auto mb-16 text-center">
         <p className="text-lg mb-6">
-          I am an enthusiastic IT undergraduate with a strong foundation in full-stack web development. 
-          My journey in technology is driven by a desire to solve real-world problems through innovative solutions. 
-          I am adaptable, detail-oriented, and constantly expanding my knowledge in various technologies.
+          I'm a passionate UI/UX Designer focused full-time on creating intuitive and visually engaging digital experiences. 
+          With a strong eye for design and user flow, I craft user-centered interfaces that not only look great but also feel effortless to use.
+
+          While my core lies in UI/UX, I also have hands-on experience in frontend development, 
+          allowing me to bridge the gap between design and implementation. 
+          I enjoy turning ideas into clean, functional, and accessible designs that users love.
         </p>
         <div className="flex flex-wrap justify-center gap-2">
-          <Badge variant="outline" className="text-sm px-3 py-1">Full-Stack Development</Badge>
-          <Badge variant="outline" className="text-sm px-3 py-1">UI/UX Design</Badge>
+          <Badge variant="outline" className="text-sm px-3 py-1">UI/UX</Badge>
+          <Badge variant="outline" className="text-sm px-3 py-1">Front-End Development</Badge>
           <Badge variant="outline" className="text-sm px-3 py-1">Problem Solving</Badge>
           <Badge variant="outline" className="text-sm px-3 py-1">Team Leadership</Badge>
         </div>
