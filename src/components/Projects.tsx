@@ -83,7 +83,7 @@ export default function Projects() {
         "Explore a curated collection of books across all genres, handpicked to inspire, entertain, and ignite your imagination.",
       contribution:
         "Created wireframes, mockups, and prototypes in Figma with attention to user flows and color psychology.",
-      tags: ["UI/UX", "Figma", "Mobile UI", "Coffee", "User Flow"],
+      tags: ["UI/UX", "Figma", "Mobile UI", "Books", "User Flow"],
       image: "/projects/chapterone.png",
       github:
         "https://www.figma.com/design/73nmRF5Dfja1onw04YMCIC/Home-page---Book-Store?node-id=0-1&t=PR0Y2WAdQaaiy9in-1",
